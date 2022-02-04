@@ -24,4 +24,8 @@ SET PASSWORD 'root'@'localhost'=PASSWORD('mynewpasword');
 
 
 // download apache default url
+sudo apt-get purge phpmyadmin
+OR
+sudo apt-get remove phpmyadmin
+
 https://www.phpmyadmin.net/news/2022/1/23/phpmyadmin-499-released/
