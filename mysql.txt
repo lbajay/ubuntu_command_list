@@ -14,8 +14,11 @@ SELECT DATABASE() FROM DUAL;
 // import file in database ======
 source /home/sandip1/Downloads/assest.sql
 
-// export file of database in mysql (ubuntu)
+// export database in mysql (ubuntu)
 mysqldump -u root -p assest > /home/sandip1/Downloads/assest_database.sql
+
+// export table in mysql (ubuntu)
+$ mysqldump -u {username} -p {database_name} {table_name} > {file_path}
 
 
 // change password of root user ======

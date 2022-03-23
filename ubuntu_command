@@ -30,3 +30,30 @@ sudo update-alternatives --set phar.phar /usr/bin/phar.phar8.0
         cd /etc/apache2
     # then
         apache2ctl configtest
+
+
+#  start apache restart 
+        sudo service apache2 restart
+
+# start update alternative config (php edit )
+sudo update-alternatives --config php
+sudo update-alternatives --config editor
+
+
+# Default PHP 7.1 is set on your system and you need to switch to PHP 5.6
+
+$ sudo a2dismod php7.1
+$ sudo a2enmod php5.6
+$ sudo service apache2 restart
+    #   optional
+$ sudo update-alternatives --set php /usr/bin/php5.6
+
+
+# 
+# memmory limit set allocate
+ini_set('memory_limit', '-1');
+# fixed group by problem 
+SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+
+# start install php gd
+sudo apt-get install php7.2-gd
