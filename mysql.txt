@@ -13,6 +13,8 @@ SELECT DATABASE() FROM DUAL;
 
 // import file in database ======
 source /home/sandip1/Downloads/assest.sql
+//  OR 
+mysql -u root -p databasename <file.sql
 
 // export database in mysql (ubuntu)
 mysqldump -u root -p assest > /home/sandip1/Downloads/assest_database.sql

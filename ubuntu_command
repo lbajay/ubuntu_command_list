@@ -57,3 +57,11 @@ SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
 
 # start install php gd
 sudo apt-get install php7.2-gd
+
+
+# redish start 
+sudo systemctl restart redis
+  //or
+sudo systemctl restart redis.service
+
+sudo systemctl status redis
