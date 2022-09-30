@@ -1,0 +1,6 @@
+============check running command list===================
+
+ps -ef | egrep "artisan|PID"
+
+==================kill all running command ===============
+killall -9 php
