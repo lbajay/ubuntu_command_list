@@ -65,3 +65,12 @@ sudo systemctl restart redis
 sudo systemctl restart redis.service
 
 sudo systemctl status redis
+
+//====================start check running command list====================
+ps -ef
+
+
+ps -ef | egrep "artisan|PID
+
+killall -9 php
+
